@@ -43,7 +43,7 @@ resource "aws_iam_role_policy" "ProjectSpendCost" {
       {
         "Effect" : "Allow",
         "Action" : [
-          "s3:PutObject"
+          "s3:PutObject"  
         ],
         "Resource" : [
           "arn:aws:s3:::${var.s3_xc3_bucket.id}/*"
