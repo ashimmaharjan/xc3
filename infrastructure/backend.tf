@@ -16,9 +16,9 @@
 
 terraform {
   backend "s3" {
-    bucket         = "terraform-state-xc3" // S3 bucket for terraform state management
+    bucket         = "terraform-state-ankitt" // S3 bucket for terraform state management
     key            = "xc3/xc3.tfstate"     // S3 object key for terraform state file to maintain history of resources
-    region         = "eu-west-1"
-    dynamodb_table = "terraform-lock"
+    region         = "ap-southeast-2"
+    dynamodb_table = "terraform-lock-ankitt"
   }
 }
